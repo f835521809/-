@@ -1,0 +1,25 @@
+<!--pages/taptwo/taptwo.wxml-->
+<view class='container'>
+  <!-- <view wx:for="{{data}}" wx:key='{{index}}'>
+    <text>{{item.one}}</text>
+    <text>{{item.two}}</text>
+  </view> -->
+  <view class='box' wx:for="{{data}}" wx:key='{{index}}'> 
+    <view class='title'>
+      <text>{{item.one}}</text>
+      <text>预约成功</text>
+    </view>
+    <view class='center' wx:for="{{enrolledData}}" wx:key="{{index}}">
+      <text>下午 {{item.times}}</text>
+    </view>
+    <view class='txt'>
+      <text>请您携带有效证件从西门按时参观</text>
+      <text>校园参观服务不收费，警惕无照游商非法斗兽</text>
+    </view>
+    <view class='bottom'>
+        <view class='btn' bindtap="tapthree">修改</view>
+        <text>参观当日无法取消,请务必提前取消</text>
+    </view>
+  </view>
+
+</view>

@@ -1,0 +1,41 @@
+<!--logs.wxml-->
+<view>
+   <view class='box'>
+       <view class='box1'>
+       <text>花花</text>
+       <text>居民身份证:14************5</text>
+     </view>
+     <view class='set'>
+         <text>修改身份</text>
+     </view>
+   </view>
+  
+   <view class='time'>
+    <text>预约日期</text>
+    <ul>
+      <li 
+      wx:for="{{listdata}}" 
+      class="{{index == id ? 'active' : null}}" 
+      wx:key="{{index}}" 
+      bindtap="check" 
+      data-id="{{index}}">
+        <text>{{item.one}}</text>
+        <text>{{item.two}}</text>
+      </li>
+    </ul>
+  </view>
+  <view class='enrolled' >
+    <text>入校时间</text>
+    <ul wx:if="{{flag}}">
+      <li wx:for="{{enrolledData}}" class="{{index == enrolledid ? 'active' : null}}" wx:key="{{index}}"  bindtap="enrolledcheck" data-enrolledid="{{index}}">
+        <text>{{item.times}}</text>
+      </li>
+    </ul>
+  </view>
+
+
+
+
+
+      <button bindtap='yuyue'>预约</button>  
+</view>

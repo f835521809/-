@@ -1,0 +1,19 @@
+<!--pages/tapthree/tapthree.wxml-->
+<view class='container'>
+  <view class='box' wx:for="{{data}}" wx:key='{{index}}'> 
+    <view class='title'>
+      <text>{{item.one}}</text>
+      <text>预约成功</text>
+    </view>
+    <view class='center'>
+      <text>下午</text>
+      <text>预约人 :花花</text>
+    </view>
+    <view class='txt'>
+      <text>仅可删除同行人或取消预约</text>
+    </view>
+  </view>
+  <view class='button'>
+      <button bindtap='cancel'>取消预约</button>
+    </view>
+</view>

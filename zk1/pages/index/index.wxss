@@ -1,0 +1,29 @@
+/**index.wxss**/
+@import "../font/iconfont.wxss";
+.banner image{
+   height: 320rpx;
+
+}
+
+.ul{
+   width: 650rpx;
+   height: 300rpx;
+   background: #ccc;
+   margin-left: 52rpx;
+   border-radius: 30rpx;
+   margin-top: 35rpx;
+}
+.biao{
+   font-weight: bolder;
+    border-bottom: 1px #fff solid;
+}
+.li{
+   display: flex;
+   justify-content: space-between;
+   height: 100rpx;
+   line-height: 100rpx;
+   border-bottom: 1px #fff solid;
+}
+text{
+   margin-left: 35rpx;
+}

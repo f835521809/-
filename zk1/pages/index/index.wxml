@@ -1,0 +1,41 @@
+<!--index.wxml-->
+<view class="container">
+   <view class='banner'>
+       <image src="../img/1.png"></image>
+   </view>
+   
+    <view class='ul'>
+     <view class='biao'>
+        <text>校园参观</text>
+     </view>
+      <view class='li'>
+         <text bindtap='bindViewTap'><icon></icon>预约管理，个人预约</text>
+         <text>></text>
+      </view>
+      <view class='li'>
+       <text bindtap='taptwo'><icon></icon>预约管理，我的预约</text>
+       <text>></text>
+     </view>
+    </view>
+
+    <view class='ul'>
+     <view class='biao'>
+        <text>发现精彩</text>
+     </view>
+      <view class='li'>
+         <text><icon></icon>游览服务，校园导览</text>
+         <text>></text>
+      </view>
+      <view class='li'>
+       <text><icon></icon>游览服务，参观须知</text>
+       <text>></text>
+     </view>
+    </view>
+
+
+
+
+
+
+
+</view>
