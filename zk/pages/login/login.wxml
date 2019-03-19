@@ -1,0 +1,12 @@
+<!--pages/default/detail/detail.wxml-->
+<view>
+  <view class='sec' wx:for="{{newObj}}" wx:key="{{index}}">
+        <image wx:key wx:for="{{item.images_list}}" src="{{item.url}}"/>
+        <text>{{item.title}}</text>
+        <view class='imgs'>
+          <image  src="{{item.user.images}}"/>
+          <text>{{item.user.nickname}}</text>
+        </view> 
+  </view>
+</view>
+

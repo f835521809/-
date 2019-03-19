@@ -1,0 +1,49 @@
+/* pages/default/default.wxss */
+.box .list{
+    white-space: nowrap;
+    height: 100rpx;
+    display: flex;
+    font-size: 32rpx;
+    align-items: center;
+}
+.HighLight{
+  color: red;
+}
+.box .list text{
+    /* display: inline-block; */
+    height: 80rpx;
+    padding: 20rpx;
+    box-sizing: border-box;
+   border-bottom: 1rpx solid #CCC;
+    
+}
+.content{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.content .con{
+    width: 48%;
+    margin-left: 10rpx;
+    margin-top: 20rpx;
+}
+.content .con>image{
+    width: 100%;
+}
+.con>text{
+  font-weight: 800;
+}
+.imgs {
+  line-height: 100rpx;
+  display: flex;
+  align-items: center;
+}
+.imgs image{
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 50%;
+  margin-right: 10rpx;
+}
+.imgs text{
+  font-size: 30rpx;
+}

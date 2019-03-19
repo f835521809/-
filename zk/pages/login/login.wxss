@@ -1,0 +1,10 @@
+/* pages/login.wxss */
+image{
+   width: 100%;
+   height: 300rpx;
+}
+
+.imgs image{
+     width: 100rpx;
+     height: 100rpx;
+}

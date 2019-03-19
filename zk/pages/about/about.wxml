@@ -1,0 +1,11 @@
+<!--pages/about/about.wxml-->
+<view class="Mine">
+  <image src="../../image/img1.png"></image>
+  <view class="login" >
+    <button wx:if="{{canIUse}}" open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo">微信登录</button>
+  </view>
+  <view class="login">
+    <button>已有账号，手机号登录</button>
+  </view>
+</view>
+

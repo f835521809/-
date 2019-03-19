@@ -1,0 +1,26 @@
+<!--pages/default/default.wxml-->
+<view class="box">
+    <view class='inp'>
+    </view>
+    <scroll-view style="width:320px" scroll-x>
+        <view  class="list">
+            <text class="{{index == ind ? 'HighLight' : ''}}" wx:key="{{index}}" data-ind="{{index}}" wx:for="{{navlist}}" bindtap='getIndex'>{{item.title}}</text>
+        </view>
+    </scroll-view>
+    <scroll-view 
+     scroll-y
+     style="height:600px;"
+     scroll-top="{{scrollTop}}"
+    >
+      <view  class="content" bindtap="scrollTops">
+       <view class="con" wx:for="{{list}}" wx:key="{{index}}" data-id="{{item.id}}" bindtap="getClickData">
+        <image wx:key wx:for="{{item.images_list}}" src="{{item.url}}"/>
+        <text>{{item.title}}</text>
+        <view class='imgs'>
+          <image  src="{{item.user.images}}"/>
+          <text>{{item.user.nickname}}</text>
+        </view> 
+       </view>
+        </view>
+    </scroll-view>
+</view>
